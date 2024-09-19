@@ -1,3 +1,4 @@
+
 /*============
 
 This file only contains the theme color schemes, (not the style ) If you want to change the color
@@ -5,6 +6,10 @@ This file only contains the theme color schemes, (not the style ) If you want to
 just change the color code  and rgba value. The whole theme color will be changed.
 
 ===========*/
+
+
+
+
 
 /* Filter the 'background' value classes*/
 
@@ -39,7 +44,12 @@ just change the color code  and rgba value. The whole theme color will be change
     background: #f6b129;
 }
 
+
 /* background style two */
+
+
+
+
 
 /* Filter the 'color' value classes*/
 
@@ -100,6 +110,7 @@ textarea:focus,
 .header-search button {
     border-color: #f6b129;
 }
+
 
 /* change the theme logo for your own color schemes */
 
