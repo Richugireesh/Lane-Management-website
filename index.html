@@ -542,7 +542,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 counter-colmun">
                     <div class="single-item">
                         <article class="column wow fadeIn" data-wow-duration="0ms">
-                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="25">0</span><span>+</span></div>
+                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="1">0</span><span>+</span></div>
                             <div class="text">Years Experience</div>
                         </article>
                     </div>
@@ -550,7 +550,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 counter-colmun">
                     <div class="single-item">
                         <article class="column wow fadeIn" data-wow-duration="0ms">
-                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="45">0</span><span>+</span></div>
+                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="2">0</span><span>+</span></div>
                             <div class="text">Awards Win</div>
                         </article>
                     </div>
@@ -558,7 +558,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 counter-colmun">
                     <div class="single-item">
                         <article class="column wow fadeIn" data-wow-duration="0ms">
-                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="1250">0</span><span>+</span></div>
+                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="25">0</span><span>+</span></div>
                             <div class="text">Happy Customers</div>
                         </article>
                     </div>
@@ -566,7 +566,7 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 counter-colmun">
                     <div class="single-item">
                         <article class="column wow fadeIn" data-wow-duration="0ms">
-                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="150">0</span><span>+</span></div>
+                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="15">0</span><span>+</span></div>
                             <div class="text">Our Expert Staffs</div>
                         </article>
                     </div>
@@ -756,36 +756,105 @@
                     <div class="call-back-content">
                         <div class="call-back-title">
                             <div class="section-title"><h2>Request A <span>Call Back</span></h2></div>
-                            <div class="title-text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm temp </p></div>
+                            <div class="title-text"><p>We'd love to hear from you! Whether you have
+                            questions, feedback, or just want to say
+                            hello, we're here to listen. </p></div>
                         </div>
                         <div class="form-area">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 colmun">
-                                        <input type="text" placeholder="Your Name">
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 colmun">
-                                        <input type="email" placeholder="Email">
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 colmun">
-                                        <input type="text" placeholder="Phone">
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 col-xs-12 colmun">
-                                        <div class="select-box">
-                                            <i class="fa fa-angle-down"></i>
-                                            <select class="custom-select-box">
-                                                <option>Select a Topic</option>
-                                                <option>Project</option>
-                                                <option>Financial</option>
-                                                <option>Bima</option>
-                                                <option>Insurence</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="button">
-                                    <button class="btn-one style-one radi">Send Request</button>
-                                </div>
+                            <form
+                                action="https://api.web3forms.com/submit"
+                                method="POST"
+                            >
+                                <!-- REQUIRED: Your Access key here. Don't worry this can be public -->
+                                <input
+                                    type="hidden"
+                                    name="access_key"
+                                    value="ee0c4e13-2471-4d35-acf6-00c19372107a"
+                                />
+
+                                <!-- Optional: Subject an be prefilled using type="hidden"
+                                   or type="text" for normal user submitted input -->
+                                <input
+                                    type="hidden"
+                                    name="subject"
+                                    value="New Submission from Web3Forms"
+                                />
+
+                                <!-- Optional: From Name you want to see in the email
+                                   Default is "Notifications". you can overwrite here -->
+                                <input
+                                    type="hidden"
+                                    name="from_name"
+                                    value="lanemanagement"
+                                />
+
+                                <!-- Optional: Default replyto will be "email" field (if available)
+                                   you may overwrite replyto with different email here -->
+                                <input
+                                    type="hidden"
+                                    name="replyto"
+                                    value="customer@example.com"
+                                />
+
+                                <!-- Optional: Custom Redirection or Thank you Page
+                                   Make sure you add full URL including https:// -->
+                                <input
+                                    type="hidden"
+                                    name="redirect"
+                                    value="https://web3forms.com/success"
+                                />
+
+                                <!-- Optional: But Recommended: To Prevent SPAM Submission.
+                                   Make sure its hidden by default -->
+                                <input
+                                    type="checkbox"
+                                    name="botcheck"
+                                    class="hidden"
+                                    style="display: none"
+                                />
+
+                                <!-- hCaptcha: Recommended for Advanced Spam Protection. -->
+                                <div
+                                    class="h-captcha"
+                                    data-captcha="true"
+                                ></div>
+
+                                <div
+                                    class="cf-turnstile"
+                                    data-sitekey="<YOUR_SITE_KEY>"
+                                ></div>
+
+                                <!-- Custom Form Data: Form data you wish to receive in email. -->
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="email"
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    name="First Name"
+                                    placeholder="First Name"
+                                    required
+                                />
+                                <input
+                                    type="text"
+                                    name="Phone Number"
+                                    placeholder="Phone Number"
+                                    required
+                                />
+                                <textarea
+                                    name="message"
+                                    placeholder="message"
+                                    required
+                                ></textarea>
+                                <button
+                                    type="submit"
+                                    class="btn-one style-one radi"
+                                    data-loading-text="Please wait..."
+                                >
+                                    Send Message
+                                </button>
                             </form>
                         </div>
                     </div>
