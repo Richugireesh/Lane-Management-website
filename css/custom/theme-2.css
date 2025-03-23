@@ -1,4 +1,3 @@
-
 /*============
 
 This file only contains the theme color schemes, (not the style ) If you want to change the color
@@ -6,10 +5,6 @@ This file only contains the theme color schemes, (not the style ) If you want to
 just change the color code  and rgba value. The whole theme color will be changed.
 
 ===========*/
-
-
-
-
 
 /* Filter the 'background' value classes*/
 
@@ -44,12 +39,7 @@ just change the color code  and rgba value. The whole theme color will be change
     background: #f6b129;
 }
 
-
 /* background style two */
-
-
-
-
 
 /* Filter the 'color' value classes*/
 
@@ -111,15 +101,14 @@ textarea:focus,
     border-color: #f6b129;
 }
 
-
 /* change the theme logo for your own color schemes */
 
 .logo-box {
-    background: url(../../images/home/logo2.svg) no-repeat 0% 0%;
+    background: url(../../images/logo/LaneManagement.png) no-repeat 0% 0%;
     background-size: contain;
 }
 
 .footer-logo {
-    background: url(../../images/home/logo2.svg) no-repeat 0% 0%;
+    background: url(../../images/logo/LaneManagement.png) no-repeat 0% 0%;
     background-size: contain;
 }
