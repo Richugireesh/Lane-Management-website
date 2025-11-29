@@ -686,6 +686,30 @@
 
 			datepicker();
 			datepickerone();
+
+			// Mobile Menu Toggle
+			if ($('.mobile-nav-toggler').length) {
+				$('.mobile-nav-toggler').on('click', function () {
+					$('body').addClass('mobile-menu-visible');
+					$('.main-menu').addClass('open');
+					$('.mobile-menu-overlay').fadeIn();
+				});
+
+				$('.mobile-menu-close, .mobile-menu-overlay').on('click', function () {
+					$('body').removeClass('mobile-menu-visible');
+					$('.main-menu').removeClass('open');
+					$('.mobile-menu-overlay').fadeOut();
+				});
+			}
+
+			// Dropdown Toggle for Mobile
+			if ($('.main-menu .navigation > li.dropdown > a').length) {
+				$('.main-menu .navigation > li.dropdown > a').on('click', function (e) {
+					e.preventDefault();
+					$(this).parent().toggleClass('open');
+					$(this).next('ul').slideToggle(300);
+				});
+			}
 		})(jQuery);
 	});
 
